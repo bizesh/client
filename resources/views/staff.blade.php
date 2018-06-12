@@ -3,7 +3,7 @@
 @section('content')
 <div class="card-client card-client-padding">
               <div class="card-header">
-              <h3 class="card-title" style="text-align:center"> <b> Client Info </b> </h3> 
+              <h3 class="card-title" style="text-align:center"> <b> Client Staffs </b> </h3> 
               </div>
               <!-- /.card-header -->
               <div class="card-body p-0">
@@ -11,36 +11,38 @@
                   <tr>
                     <th style="width: 10px">#</th>
                     <th>Id</th>
+                    <th>Position</th>
                     <th>Name</th>
-                    <th>Address</th>
                     <th>Phone</th>
                     <th>Email</th>
-                    <th>Contract created</th>
+                    <th>Address</th>
                     <th>Created At</th>
                     <th>Updated At</th>
                   </tr>
                   <tr>
-                    <td> 1 </td>  
+                    <td>1.</td>
                     <td>21</td>
-                    <td>SOS Pokhara</td>
-                    <td>Pokhara</td>
-                    <td>98412345678</td>
-                    <td> sospokhara@gmail.com </td>
-                    <td>2071-10-09 </td>
-                    <td>2075-02-29</td>
-                    <td>2075-02-29 </td>
+                    <td>Principal</td>
+                    <td>Hermain Geminier</td>
+                    <td> 9876543212</td>
+                    <td>sirji@yahoo.com</td>
+                    <td>Gongabu,Kathmandu</td>
+                    <td>2075-05-05</td>
+                    <td>2075-09-09</td>
+                    
                   </tr>
 
                   <tr>
-                    <td> 2 </td>  
+                    <td>1.</td>
                     <td>22</td>
-                    <td>kakhara</td>
-                    <td>coteshwor,Kathmandu</td>
-                    <td>98412345678</td>
-                    <td>kakhuraa@gmail.com </td>
-                    <td>2071-11-09 </td>
-                    <td>2075-02-29</td>
-                    <td>2075-02-29 </td>
+                    <td>Accountant</td>
+                    <td>Kakhara A/c</td>
+                    <td> 9875436798</td>
+                    <td>accountji@gmail.com</td>
+                    <td>New Road,Kathmandu</td>
+                    <td>2075-07-08</td>
+                    <td>2075-07-19</td>
+                    
                   </tr>
                   
                 </table>

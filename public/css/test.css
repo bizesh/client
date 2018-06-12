@@ -1,0 +1,22 @@
+/* Bizesh Pratik CSS Start */
+.card-client{ width: 100%; margin: 0 auto;}
+.card-client-padding{
+    padding:20px;
+ }
+
+ .search{
+     padding-top: 5px;
+     
+ }
+
+ .search-form{
+ width: 100%;
+    margin-left: 20px;
+ }
+
+
+ #box-width{
+    width: 200px;
+ }
+
+ 
