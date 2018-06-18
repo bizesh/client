@@ -11,19 +11,26 @@
 |
 */
 
-Route::get('/', function () {
+ /*Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/',
+    ['uses' =>  'HomeController@getClientInfoList']
+);
+
 Route::get('/payment', 
+
     [
-    'as'=>'get-payment-view',
-    'uses'=>'HomeController@getPaymentView'
-    ]
+        'as'=>'get-payment-view',
+        'uses' =>  'HomeController@getClientPaymentsInfo']
+    
 );
 Route::get('/clientinfo', 
     [
     'as'=>'get-client-info',
-    'uses'=>'HomeController@getClientInfo'
+    'uses'=>'HomeController@getClientInfoList'
     ]
 );
 
@@ -37,7 +44,7 @@ Route::get('/serviceRecord',
 Route::get('/renewalRecord', 
     [
     'as'=>'get-renewal',
-    'uses'=>'HomeController@getRenewal'
+    'uses'=>'HomeController@getClientRenewalsInfo'
     ]
 );
 
@@ -45,5 +52,20 @@ Route::get('/clientStaff',
     [
     'as'=>'get-client-staff',
     'uses'=>'HomeController@getStaff'
+    ]
+);
+
+
+Route::get('/customSearch', 
+    [
+    'as'=>'get-search-view',
+    'uses'=>'HomeController@getSearchView'
+    ]
+);
+
+Route::get('/searchResults', 
+    [
+    'as'=>'get-search-results',
+    'uses'=>'HomeController@getSearchResults'
     ]
 );

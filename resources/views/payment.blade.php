@@ -9,42 +9,28 @@
               <div class="card-body p-0 ">
                 <table class="table table-striped   mycard">
                   <tr>
-                    <th style="width: 10px;">#</th>
-                    <th>Id</th>
-                    <th style="width:200px;">Paid At</th>
-                    <th style="width:50px;">payment_mode</th>
-                    <th style="width:50px;">payment_status</th>
+                    
+                    <th>id</th>
+                    <th >paid_at</th>
                     <th>paid_amount</th>
-                    <th>total_amount</th>
-                    <th>remaining_amount</th>
+                    <th>payment mode</th>
+                    <th>Payment status</th>
                     <th style="width:200px;">Created At</th>
-                    <th style="width:200px;">Updated At</th>
+                    
                   </tr>
-                  <tr>
-                    <td>1.</td>
-                    <td>21</td>
-                    <td>2075-03-04</td>
-                    <td>cheque</td>
-                    <td> pending</td>
-                    <td>10000</td>
-                    <td> 20000</td>
-                    <td> 10000</td>
-                    <td>2075-02-29</td>
-                    <td>2075-02-29 </td>
-                  </tr>
+                  
 
-                  <tr>
-                    <td>2.</td>
-                    <td>22</td>
-                    <td>2075-03-04</td>
-                    <td>cash</td>
-                    <td>cleared</td>
-                    <td>20000</td>
-                    <td> 20000</td>
-                    <td> 0.00</td>
-                    <td>2075-03-29</td>
-                    <td>2074-04-29 </td>
-                  </tr>
+                  @foreach($payment as $key => $c)
+                    <tr>
+                      
+                      <td>{{ $key+1 }}</td>
+                      <td>{{ $c->paid_at }}</td>
+                      <td>{{ $c->paid_amount }}</td>
+                      <td>{{ $c->payment_mode }}</td>
+                      <td>{{ $c->payment_status }}</td>
+                      <td>{{ $c->created_at }}</td>
+                    </tr>
+                  @endforeach
                   
                 </table>
               </div>

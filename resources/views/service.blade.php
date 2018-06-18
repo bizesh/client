@@ -9,33 +9,26 @@
               <div class="card-body p-0">
                 <table class="table table-striped">
                   <tr>
-                    <th style="width: 10px;">#</th>
+                    
                     <th>Id</th>
+                    <th> Client Name </th>                   
                     <th>service date</th>
                     <th>served by</th>
                     <th>remarks</th>
                     <th>Created At</th>
-                    <th>Updated At</th>
+                    
                   </tr>
-                  <tr>
-                    <td>1.</td>
-                    <td>21</td>
-                    <td>2075-05-05</td>
-                    <td>Pratik Joshi</td>
-                    <td> Support provided </td>
-                    <td> 2073-09-09 </td>
-                    <td> 2075-02-10 </td>
-                  </tr>
-
-                  <tr>
-                    <td>2.</td>
-                    <td>22</td>
-                    <td>2074-04-05</td>
-                    <td>Abin Pandey</td>
-                    <td> Installation </td>
-                    <td> 2072-04-22 </td>
-                    <td> 2075-02-29 </td>
-                  </tr>
+                  @foreach($service as $key=> $c)
+                    <tr>
+                      
+                      <td>{{ $key+1 }}</td>
+                      <td>{{ $c->name}}</td>
+                      <td>{{ $c->service_date }}</td>
+                      <td>{{ $c->served_by }}</td>
+                      <td>{{ $c->remarks }}</td>
+                      <td>{{ $c->created_at }}</td>
+                    </tr>
+                  @endforeach
                   
                 </table>
               </div>

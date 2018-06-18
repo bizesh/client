@@ -33,8 +33,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-
-
+  
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -176,6 +175,18 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
+           <li class="nav-item has-treeview menu-open">
+            <a href="{{URL::route('get-search-view')}}" class="nav-link">
+              
+              <p>
+                Search
+                
+              </p>
+            </a>
+            
+            </li>
+
           <li class="nav-item has-treeview menu-open">
             <a href="{{URL::route('get-client-info')}}" class="nav-link">
               
@@ -223,39 +234,7 @@
   
   <div class="content-wrapper">
 
-  <div class="search-form">
-  <div class="form-group">
-                    <label>Client Name</label>
-                    <br>
-                    <select class="form-control" id="box-width">
-                      
-                    </select>
-
-<div class="form-check" style="padding-top:10px; margin-left:3px;">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label">Client Info</label>
-
-                      <input class="form-check-input" type="checkbox" value="option1" style="margin-left:10px;">
-                      <label class="form-check-label" style="margin-left:27px;">Payments</label>
-
-<input class="form-check-input" type="checkbox" value="option1" style="margin-left:10px;">
-                      <label class="form-check-label" style="margin-left:27px;">Service Records</label>
-
-<input class="form-check-input" type="checkbox" value="option1" style="margin-left:10px;">
-                      <label class="form-check-label" style="margin-left:27px;">Renewals</label>
-
-<input class="form-check-input" type="checkbox" value="option1" style="margin-left:10px;">
-                      <label class="form-check-label" style="margin-left:27px;">Show Staff Details</label>
-
-
-                    </div>
-
-
-            </div>
-
-         
-
-  </div>
+  
   
     <!-- Content Header (Page header) -->
     @yield('content')
@@ -277,6 +256,8 @@
        
 			});
     </script>
+
+
     
     
 
