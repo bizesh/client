@@ -33,6 +33,17 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+<!-- For Date picker-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        $('#datepicker2').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+
   
 </head>
 <body class="hold-transition sidebar-mini">
@@ -220,6 +231,12 @@
                   <p>Client Staffs</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{URL::route('get-service-payments')}}" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Service Payments</p>
+                </a>
+              </li>
             </ul>
           </li>
           
@@ -241,20 +258,10 @@
    
 </div>
 
-<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-    <script type="text/javascript">
-    
-			$(document).ready(function() {
-        
-				var country = [" AA", "SOS Pokhara", "Kakhara", "SOS Surkhet", "SOS Itahari", "SOS Kathamandu", "Chanakya", "Cliennt 1", "client 2"];
-				$("#box-width").select2({
-				  data: country
-          
-				});
-       
-			});
+ <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
     </script>
 
 

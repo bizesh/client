@@ -11,10 +11,10 @@
                   <tr>
                     
                     <th>id</th>
+                    <th>Client Name</th>
                     <th >paid_at</th>
                     <th>paid_amount</th>
-                    <th>payment mode</th>
-                    <th>Payment status</th>
+                    <th>remarks</th>
                     <th style="width:200px;">Created At</th>
                     
                   </tr>
@@ -24,10 +24,10 @@
                     <tr>
                       
                       <td>{{ $key+1 }}</td>
+                      <td>{{ $c->name }}</td>
                       <td>{{ $c->paid_at }}</td>
                       <td>{{ $c->paid_amount }}</td>
-                      <td>{{ $c->payment_mode }}</td>
-                      <td>{{ $c->payment_status }}</td>
+                      <td>{{ $c->remarks }}</td>
                       <td>{{ $c->created_at }}</td>
                     </tr>
                   @endforeach

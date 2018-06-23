@@ -55,6 +55,13 @@ Route::get('/clientStaff',
     ]
 );
 
+Route::get('/servicePayments', 
+    [
+    'as'=>'get-service-payments',
+    'uses'=>'HomeController@getServicePayments'
+    ]
+);
+
 
 Route::get('/customSearch', 
     [
@@ -67,5 +74,33 @@ Route::get('/searchResults',
     [
     'as'=>'get-search-results',
     'uses'=>'HomeController@getSearchResults'
+    ]
+);
+
+Route::post('/insertClient', 
+    [
+    'as'=>'insertClient',
+    'uses'=>'InsertController@storeClient'
+    ]
+);
+
+Route::post('/insertService', 
+    [
+    'as'=>'insertService',
+    'uses'=>'InsertController@storeService'
+    ]
+);
+
+Route::post('/insertRenewal', 
+    [
+    'as'=>'insertRenewal',
+    'uses'=>'InsertController@storeRenewal'
+    ]
+);
+
+Route::post('/insertStaff', 
+    [
+    'as'=>'insertStaff',
+    'uses'=>'InsertController@storeStaff'
     ]
 );
